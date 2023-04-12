@@ -53,7 +53,8 @@ def receive_messages():
         # receive a message from the CAN bus
         try:
             msg = bus.recv()
-            print(msg)
+            if(msg == None):
+                continue
         except:
             continue
         
