@@ -7,7 +7,7 @@ import datetime
 import csv_utils
 
 ######
-bustype = 'socketcan_ctypes' 
+bustype = 'socketcan' 
 ######
 
 #prepare csv
@@ -53,11 +53,9 @@ def receive_messages():
         # receive a message from the CAN bus
         try:
             msg = bus.recv()
-            if(msg == None):
-                continue
+            if(msg != None):
+                # put the message in the queue for processing
+                message_queue.put(msg)
         except:
             continue
-        
-        # put the message in the queue for processing
-        message_queue.put(msg)
 
