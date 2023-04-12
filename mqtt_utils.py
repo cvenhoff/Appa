@@ -6,7 +6,7 @@ import paho.mqtt.client as mqtt
 client = mqtt.Client(client_id="Ecogenium")
 
 def connect():
-    client.connect("10.8.0.1", 1883)
+    client.connect("195.201.134.169", 1883)
     client.loop_start()
 
 def publish(sensor_name, sensor_value):
