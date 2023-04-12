@@ -35,7 +35,7 @@ def process_messages():
         # decode the message using the dbc file
         print(msg.arbitration_id)
         print(msg.data)
-        decoded_message = dbc.decode_message(msg.arbitration_id,msg.data)
+        decoded_message = dbc.decode_message(msg.arbitration_id+1,msg.data)
 
         for name in decoded_message:
             # send the decoded message as a MQTT message
