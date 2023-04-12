@@ -35,17 +35,17 @@ def process_messages():
         # decode the message using the dbc file
         print(msg.arbitration_id)
         print(msg.data)
-        decoded_message = dbc.decode_message(msg.arbitration_id+1,msg.data)
+        #decoded_message = dbc.decode_message(msg.arbitration_id+1,msg.data)
 
-        for name in decoded_message:
-            # send the decoded message as a MQTT message
-            mqtt_utils.publish(name,decoded_message[name])
-            # write in csv
-            with open(filename, 'a', newline='') as csvfile:
-                t = datetime.datetime.now()
-                t = t.strftime('%Y-%m-%dT%H:%M:%S.%f')[:-3] + 'Z'
-                writer = csv.writer(csvfile)
-                writer.writerow(["","",0,t,t,t,decoded_message[name],name,"mqqt_consumer","local","data"])
+        #for name in decoded_message:
+        #    # send the decoded message as a MQTT message
+        #    mqtt_utils.publish(name,decoded_message[name])
+        #    # write in csv
+        #    with open(filename, 'a', newline='') as csvfile:
+        #        t = datetime.datetime.now()
+        #        t = t.strftime('%Y-%m-%dT%H:%M:%S.%f')[:-3] + 'Z'
+        #        writer = csv.writer(csvfile)
+        #        writer.writerow(["","",0,t,t,t,decoded_message[name],name,"mqqt_consumer","local","data"])
 
             
 def receive_messages():
