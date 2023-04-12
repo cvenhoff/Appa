@@ -8,7 +8,6 @@ import csv_utils
 
 ######
 bustype = 'socketcan_ctypes' 
-dbc_param = 'FromEmergencySystemGyroRot'
 ######
 
 #prepare csv
@@ -34,7 +33,7 @@ def process_messages():
         msg = message_queue.get()
 
         # decode the message using the dbc file
-        decoded_message = dbc.decode_message(dbc_param, msg.data)
+        decoded_message = dbc.decode_message(msg.data)
 
         for name in decoded_message:
             # send the decoded message as a MQTT message
