@@ -36,6 +36,10 @@ BS_:
 BU_:
 
 
+BO_ 0 MainControllerHeartbeat: 2 Vector__XXX
+ SG_ MainControllerCounter : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MainControllerStatus : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
 BO_ 23 FromEmergencySystemGyroRot: 6 Vector__XXX
  SG_ GyroRotz2 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
  SG_ GyroRotz1 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
