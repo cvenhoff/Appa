@@ -7,9 +7,11 @@ client = mqtt.Client(client_id="Ecogenium")
 
 def connect():
     client.connect("195.201.134.169", 1883)
+    print("connected!")
     client.loop_start()
 
 def publish(sensor_name, sensor_value):
+        print("send msg")
         payload = json.dumps({
             sensor_name:sensor_value
         })
