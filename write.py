@@ -7,7 +7,7 @@ import datetime
 import csv_utils
 
 ######
-bustype = 'socketcan' 
+bustype = 'socketcan_ctypes' 
 ######
 
 #prepare csv
