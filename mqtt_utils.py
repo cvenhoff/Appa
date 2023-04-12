@@ -11,7 +11,6 @@ def connect():
     client.loop_start()
 
 def publish(sensor_name, sensor_value):
-        print("send msg")
         payload = json.dumps({
             sensor_name:sensor_value
         })
