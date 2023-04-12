@@ -16,7 +16,7 @@ csv_utils.init_csv(filename)
 
 # initialize the bus using the default interface
 #print(can.interface.detect_available_configs())
-bus =  can.interface.Bus(channel = 'can0', bustype = 'socketcan')
+bus =  can.interface.Bus(channel='can0', bustype=bustype)
 
 # specify the dbc file that will be used to decode the messages
 dbc_file = 'CarCan.dbc'
