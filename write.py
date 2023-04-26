@@ -27,6 +27,7 @@ message_queue = queue.Queue()
 
 def get_messages():
     while True: 
+        print("alive")
         # receive a message from the CAN bus
         try:
             msg = bus.recv()
