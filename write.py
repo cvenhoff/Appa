@@ -52,7 +52,7 @@ def receive_messages():
     while True:
         # receive a message from the CAN bus
         try:
-            msg = bus.recv()
+            msg = bus.recv(10.0)
             if(msg != None):
                 # put the message in the queue for processing
                 message_queue.put(msg)
