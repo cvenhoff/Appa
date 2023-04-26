@@ -57,6 +57,7 @@ def receive_messages():
             #if(msg != None):
                 # put the message in the queue for processing
             #    message_queue.put(msg)
-        except:
+        except Exception as e:
+            print(str(e))
             continue
 
