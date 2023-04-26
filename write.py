@@ -31,6 +31,7 @@ def process_messages():
         # retrieve the next message from the queue  
       
         msg = message_queue.get()
+        print(msg.arbitration_id)
 
         # decode the message using the dbc file
         decoded_message = dbc.decode_message(msg.arbitration_id,msg.data)

@@ -36,7 +36,7 @@ BS_:
 BU_:
 
 
-BO_ 1 MainControllerHeartbeat: 1 Vector__XXX
+BO_ 1 MainControllerHeartbeat: 2 Vector__XXX
  SG_ MainControllerCounter : 8|8@1+ (1,0) [0|255] "" Vector__XXX
  SG_ MainControllerStatus : 0|8@1+ (1,0) [0|255] "" Vector__XXX
 
