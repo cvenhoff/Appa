@@ -53,7 +53,8 @@ def receive_messages():
         print("alive")
         # receive a message from the CAN bus
         try:
-            msg = bus.recv()
+            continue
+            #msg = bus.recv()
             #if(msg != None):
                 # put the message in the queue for processing
             #    message_queue.put(msg)
