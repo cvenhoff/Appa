@@ -27,7 +27,7 @@ message_queue = queue.Queue()
 
 def process_messages():
     while True: 
-
+        print("alive1")
         # retrieve the next message from the queue  
       
         msg = message_queue.get()
