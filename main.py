@@ -12,7 +12,5 @@ os.system('sudo ifconfig can0 up')
 mqtt_utils.connect()
 t1 = threading.Thread(target=write.process_messages)
 t2 = threading.Thread(target=write.receive_messages)
-t1.daemon = True
-t2.daemon = True
 t1.start()
 t2.start()
