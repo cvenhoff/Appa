@@ -4,6 +4,7 @@ import threading
 import os
 
 # start hat
+os.system('sudo /sbin/ip link set can0 down')
 os.system('sudo ip link set can0 type can bitrate 100000')
 os.system('sudo ifconfig can0 up')
 
