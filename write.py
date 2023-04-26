@@ -50,6 +50,7 @@ def process_messages():
             
 def receive_messages():
     while True:
+        print("alive")
         # receive a message from the CAN bus
         try:
             msg = bus.recv()

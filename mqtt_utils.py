@@ -4,6 +4,7 @@ import paho.mqtt.client as mqtt
 # initialize the MQTT client
 
 client = mqtt.Client(client_id="Ecogenium")
+client._connect_timeout = 5.0
 
 def connect():
     client.connect("195.201.134.169", 1883)
