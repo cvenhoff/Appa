@@ -44,7 +44,7 @@ def process_messages():
                     writer = csv.writer(csvfile)
                     writer.writerow(["","",0,t,t,t,decoded_message[name],name,"mqqt_consumer","local","data"])
         except Exception as e:
-            print("Error: " + str(e))
+            print("Error: " + repr(e))
             continue
             
 def receive_messages():
@@ -56,6 +56,6 @@ def receive_messages():
                 # put the message in the queue for processing
                 message_queue.put(msg)
         except Exception as e:
-            print("Error: " + str(e))
+            print("Error: " + repr(e))
             continue
 
