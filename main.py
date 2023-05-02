@@ -1,7 +1,9 @@
+import os
+open("flag.txt", "w").close()
+
 import write
 import mqtt_utils
 import threading
-import os
 
 # start hat
 os.system('sudo ifconfig can0 down')
