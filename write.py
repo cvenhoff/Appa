@@ -1,3 +1,5 @@
+import sys
+sys.path.insert(0, '/home/pi/Appa')
 import can
 import mqtt_utils
 import csv
