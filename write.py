@@ -14,7 +14,7 @@ bustype = 'socketcan_ctypes'
 #prepare csv
 filename = 'dump.csv'
 my_path = os.path.abspath(os.path.dirname(__file__))
-path = os.path.join(my_path, filename)
+csv_path = os.path.join(my_path, filename)
 csv_utils.init_csv(path)
 
 # initialize the bus using the default interface
@@ -23,7 +23,8 @@ bus =  can.interface.Bus(channel='can0', bustype=bustype)
 
 # specify the dbc file that will be used to decode the messages
 dbc_file = 'CarCan.dbc'
-dbc = cantools.database.load_file(dbc_file)
+dbc_path = os.path.join(my_path, dbc_file)
+dbc = cantools.database.load_file(dbc_path)
 
 # initialize a queue to store incoming CAN messages
 message_queue = queue.Queue()
@@ -41,7 +42,7 @@ def process_messages():
                 # send the decoded message as a MQTT message
                 mqtt_utils.publish(name,decoded_message[name])
                 # write in csv
-                with open(path, 'a', newline='') as csvfile:
+                with open(csv_path, 'a', newline='') as csvfile:
                     t = datetime.datetime.now()
                     t = t.strftime('%Y-%m-%dT%H:%M:%S.%f')[:-3] + 'Z'
                     writer = csv.writer(csvfile)
