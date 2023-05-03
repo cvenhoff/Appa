@@ -1,1 +1,1 @@
-print("work")
+open("./Appa/test","x+")
