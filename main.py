@@ -1,3 +1,4 @@
+print("start")
 import os
 open("flag.txt", "w").close()
 
