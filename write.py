@@ -15,7 +15,7 @@ bustype = 'socketcan_ctypes'
 filename = 'dump.csv'
 my_path = os.path.abspath(os.path.dirname(__file__))
 csv_path = os.path.join(my_path, filename)
-csv_utils.init_csv(path)
+csv_utils.init_csv(csv_path)
 
 # initialize the bus using the default interface
 #print(can.interface.detect_available_configs())
