@@ -1,5 +1,3 @@
-import sys
-sys.path.insert(0, '/home/pi/Appa')
 import can
 import mqtt_utils
 import csv
@@ -7,6 +5,7 @@ import queue
 import cantools
 import datetime
 import csv_utils
+import os.path
 
 ######
 bustype = 'socketcan_ctypes' 
@@ -14,7 +13,9 @@ bustype = 'socketcan_ctypes'
 
 #prepare csv
 filename = 'dump.csv'
-csv_utils.init_csv(filename)
+my_path = os.path.abspath(os.path.dirname(__file__))
+path = os.path.join(my_path, filename)
+csv_utils.init_csv(path)
 
 # initialize the bus using the default interface
 #print(can.interface.detect_available_configs())
@@ -40,7 +41,7 @@ def process_messages():
                 # send the decoded message as a MQTT message
                 mqtt_utils.publish(name,decoded_message[name])
                 # write in csv
-                with open(filename, 'a', newline='') as csvfile:
+                with open(path, 'a', newline='') as csvfile:
                     t = datetime.datetime.now()
                     t = t.strftime('%Y-%m-%dT%H:%M:%S.%f')[:-3] + 'Z'
                     writer = csv.writer(csvfile)
