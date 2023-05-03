@@ -1,1 +1,1 @@
-open("./Appa/test","x+")
+open("test","x+")
