@@ -1,7 +1,4 @@
-print("start")
 import os
-open("flag.txt", "w").close()
-
 import write
 import mqtt_utils
 import threading
