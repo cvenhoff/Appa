@@ -37,176 +37,176 @@ BU_:
 
 
 BO_ 124 toPowerdistribution: 8 Vector__XXX
- SG_ SCChargeEnable : 40|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ PowerRelayEnable : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ PDindicatorRed : 16|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ PDindicatorBlue : 24|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ FCControllerPowerSelect : 56|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ FCControllerPowerEnable : 32|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ BoostEnable : 48|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ BleedEnable : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ SCChargeEnable : 47|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ PowerRelayEnable : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ PDindicatorRed : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ PDindicatorBlue : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ FCControllerPowerSelect : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ FCControllerPowerEnable : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ BoostEnable : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ BleedEnable : 15|8@0+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 123 fromPowerdistributionVESC2: 8 Vector__XXX
- SG_ VESK2_Power : 32|32@1+ (1,0) [0|0] "" Vector__XXX
- SG_ VESK1_Power : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ VESK2_Power : 39|32@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VESK1_Power : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
 
 BO_ 122 fromPowerdistributionVESK1: 8 Vector__XXX
- SG_ VESK_Voltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
- SG_ VESK2_Current : 32|16@1+ (1,0) [0|65535] "" Vector__XXX
- SG_ VESK1_Current : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ VESK_Voltage : 7|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ VESK2_Current : 39|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ VESK1_Current : 23|16@0+ (1,0) [0|65535] "" Vector__XXX
 
 BO_ 121 fromPowerdistributionBoost: 8 Vector__XXX
- SG_ FC_BoostVoltage : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
- SG_ FC_BoostPower : 32|32@1+ (1,0) [0|4294967295] "" Vector__XXX
- SG_ Fc_BoostCurrentOut : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ FC_BoostVoltage : 23|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ FC_BoostPower : 39|32@0+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ Fc_BoostCurrentOut : 7|16@0+ (1,0) [0|65535] "" Vector__XXX
 
 BO_ 120 fromPowerdistributionSC: 8 Vector__XXX
- SG_ SC_Voltage : 0|16@1+ (1,0) [0|0] "" Vector__XXX
- SG_ SC_ChargeCurrent : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ SC_Voltage : 7|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ SC_ChargeCurrent : 23|16@0+ (1,0) [0|65535] "" Vector__XXX
 
 BO_ 119 fromPowerdistributionFC: 8 Vector__XXX
- SG_ FC_Voltage : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
- SG_ FC_Power : 32|32@1+ (1,0) [0|4294967295] "" Vector__XXX
- SG_ FC_Current : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ FC_Voltage : 23|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ FC_Power : 39|32@0+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ FC_Current : 7|16@0+ (1,0) [0|65535] "" Vector__XXX
 
 BO_ 118 toDCDC2: 8 Vector__XXX
- SG_ setVoltageDischarge : 56|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ setVoltageCharge : 24|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ setOnOffDischarge : 32|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ setOnOffCharge : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ setCurrentDischarge : 40|16@1+ (1,0) [0|65535] "" Vector__XXX
- SG_ setCurrentCharge : 8|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ setVoltageDischarge : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ setVoltageCharge : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ setOnOffDischarge : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ setOnOffCharge : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ setCurrentDischarge : 47|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ setCurrentCharge : 15|16@0+ (1,0) [0|65535] "" Vector__XXX
 
 BO_ 117 toDCDC1: 8 Vector__XXX
- SG_ setVoltageMotor : 56|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ setOnOffMotor : 32|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ setOnOff12V : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ setCurrentMotor : 40|16@1+ (1,0) [0|65535] "" Vector__XXX
- SG_ setCurrent12V : 8|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ setVoltageMotor : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ setOnOffMotor : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ setOnOff12V : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ setCurrentMotor : 47|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ setCurrent12V : 15|16@0+ (1,0) [0|65535] "" Vector__XXX
 
 BO_ 116 fromDCDC: 8 Vector__XXX
- SG_ TemperatureMotor : 24|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ TemperatureDischarge : 56|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ TemperatureCharge : 40|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ Temperature12V : 8|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ CurrentOutMotor : 16|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ CurrentOutDischarge : 48|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ CurrentOutCharge : 32|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ CurrentOut12V : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ TemperatureMotor : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ TemperatureDischarge : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ TemperatureCharge : 47|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Temperature12V : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CurrentOutMotor : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CurrentOutDischarge : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CurrentOutCharge : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CurrentOut12V : 7|8@0+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 115 fromSidekick: 8 Vector__XXX
- SG_ H2Massflow : 0|32@1+ (1,0) [0|4294967295] "" Vector__XXX
+ SG_ H2Massflow : 7|32@0+ (1,0) [0|4294967295] "" Vector__XXX
 
 BO_ 114 fromEmergencySystemGyroRot: 8 Vector__XXX
- SG_ GyroRotZ2 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ GyroRotZ1 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ GyroRotY2 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ GyroRotY1 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ GyroRotX2 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ GyroRotX1 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ GyroRotZ2 : 47|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ GyroRotZ1 : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ GyroRotY2 : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ GyroRotY1 : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ GyroRotX2 : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ GyroRotX1 : 7|8@0+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 113 fromEmergencySystemGyroAcc: 8 Vector__XXX
- SG_ GyroAccZ2 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ GyroAccZ1 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ GyroAccY2 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ GyroAccY1 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ GyroAccX2 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ GyroAccX1 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ GyroAccZ2 : 47|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ GyroAccZ1 : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ GyroAccY2 : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ GyroAccY1 : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ GyroAccX2 : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ GyroAccX1 : 7|8@0+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 110 toSteeringWheel: 8 Vector__XXX
- SG_ Velocity : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ SupercapSOC : 16|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ StrategyMode : 32|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ LapCounter : 24|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ Distance : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Velocity : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ SupercapSOC : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ StrategyMode : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ LapCounter : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ Distance : 15|8@0+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 109 fromSteeringWheel: 8 Vector__XXX
- SG_ getStrategy : 16|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ getAccessoryButtons : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ getAccelerator : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ getStrategy : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ getAccessoryButtons : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ getAccelerator : 15|8@0+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 105 toSidekick: 8 Vector__XXX
- SG_ toSidekick_setBacklights : 24|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ toSidekick_FCStartStop : 8|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ toSidekick_FCEmergencyTrigger : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ toSidekick_setBacklights : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ toSidekick_FCStartStop : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ toSidekick_FCEmergencyTrigger : 7|8@0+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 103 toEmergencySystem: 8 Vector__XXX
- SG_ toES_RedLED : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ toES_GreenLED : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ toES_RedLED : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ toES_GreenLED : 15|8@0+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 102 fromEmergencySystem: 8 Vector__XXX
- SG_ fromES_ResetButton : 16|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ fromES_H2SensorValue : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ fromES_EmergencyButtonBack : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ fromES_ResetButton : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ fromES_H2SensorValue : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ fromES_EmergencyButtonBack : 15|8@0+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 15 ConfirmUpdateSetting: 8 Vector__XXX
- SG_ ConfUpdateSetting_SettingID : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ ConfUpdateSetting_OverrideMUX : 56|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ ConfUpdateSetting_DataSet4 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ ConfUpdateSetting_DataSet3 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ ConfUpdateSetting_DataSet2 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ ConfUpdateSetting_DataSet1 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ ConfUpdateSetting_DataSet0 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ConfUpdateSetting_SettingID : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ ConfUpdateSetting_OverrideMUX : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ ConfUpdateSetting_DataSet4 : 47|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ ConfUpdateSetting_DataSet3 : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ ConfUpdateSetting_DataSet2 : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ ConfUpdateSetting_DataSet1 : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ ConfUpdateSetting_DataSet0 : 15|8@0+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 14 UpdateSetting: 8 Vector__XXX
- SG_ UpdateSetting_SettingID : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ UpdateSetting_OverrideMUX : 56|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ UpdateSetting_DataSet4 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ UpdateSetting_DataSet3 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ UpdateSetting_DataSet2 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ UpdateSetting_DataSet1 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ UpdateSetting_DataSet0 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ UpdateSetting_SettingID : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ UpdateSetting_OverrideMUX : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ UpdateSetting_DataSet4 : 47|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ UpdateSetting_DataSet3 : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ UpdateSetting_DataSet2 : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ UpdateSetting_DataSet1 : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ UpdateSetting_DataSet0 : 15|8@0+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 13 ConfirmChangeSet: 8 Vector__XXX
- SG_ ConfChangeSet_setNumber : 8|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ ConfChangeSet_ControllerID : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ConfChangeSet_setNumber : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ ConfChangeSet_ControllerID : 7|8@0+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 12 ChangeSet: 8 Vector__XXX
- SG_ ChangeSet_SetNumber : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ChangeSet_SetNumber : 7|8@0+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 11 RecieveSetting: 8 Vector__XXX
- SG_ ReceiveSetting_SettingID : 8|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ ReceiveSetting_SenderID : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ ReceiveSetting_DataSet4 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ ReceiveSetting_DataSet3 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ ReceiveSetting_DataSet2 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ ReceiveSetting_DataSet1 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ ReceiveSetting_DataSet0 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ReceiveSetting_SettingID : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ ReceiveSetting_SenderID : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ ReceiveSetting_DataSet4 : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ ReceiveSetting_DataSet3 : 47|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ ReceiveSetting_DataSet2 : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ ReceiveSetting_DataSet1 : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ ReceiveSetting_DataSet0 : 23|8@0+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 10 RequestSetting: 8 Vector__XXX
- SG_ RequestSetting_SettingID : 8|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ RequestSetting_SenderID : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ RequestSetting_SettingID : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ RequestSetting_SenderID : 7|8@0+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 5 SteeringWheelHeartbeat: 8 Vector__XXX
- SG_ SteeringWHeartb_Status : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ SteeringWHeartb_MessageCounter : 8|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ SteeringWHeartb_maxIntervalLast : 16|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ SteeringWHeartb_maxIntervalAll : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ SteeringWHeartb_Status : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ SteeringWHeartb_MessageCounter : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ SteeringWHeartb_maxIntervalLast : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ SteeringWHeartb_maxIntervalAll : 31|8@0+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 4 AccessorySystemHeartbeat: 8 Vector__XXX
- SG_ AcceSystHeartb_Status : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ AcceSystHeartb_MessageCounter : 8|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ AcceSystHeartb_maxIntervalLast : 16|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ AcceSystHeartb_maxIntervalAll : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ AcceSystHeartb_Status : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ AcceSystHeartb_MessageCounter : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ AcceSystHeartb_maxIntervalLast : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ AcceSystHeartb_maxIntervalAll : 31|8@0+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 3 SidekickHeartbeat: 8 Vector__XXX
- SG_ SidekickHeartb_Status : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ SidekickHeartb_MessageCounter : 8|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ SidekickHeartb_maxIntervalLast : 16|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ SidekickHeartb_maxIntervalAll : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ SidekickHeartb_Status : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ SidekickHeartb_MessageCounter : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ SidekickHeartb_maxIntervalLast : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ SidekickHeartb_maxIntervalAll : 31|8@0+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 2 EmergencySystemHeartbeat: 8 Vector__XXX
- SG_ EmergSystHeartb_Status : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ EmergSystHeartb_MessageCounter : 8|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ EmergSystHeartb_maxIntervalLast : 16|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ EmergSystHeartb_maxIntervalAll : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ EmergSystHeartb_Status : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ EmergSystHeartb_MessageCounter : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ EmergSystHeartb_maxIntervalLast : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ EmergSystHeartb_maxIntervalAll : 31|8@0+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 1 MainControllerHeartbeat: 8 Vector__XXX
- SG_ MainContrHeartb_Emergency : 56|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ MainContrHeartb_Status : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ MainContrHeartb_MessageCounter : 8|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ MainContrHeartb_maxIntervalLast : 16|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ MainContrHeartb_maxIntervalAll : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MainContrHeartb_Emergency : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ MainContrHeartb_Status : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ MainContrHeartb_MessageCounter : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ MainContrHeartb_maxIntervalLast : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ MainContrHeartb_maxIntervalAll : 31|8@0+ (1,0) [0|255] "" Vector__XXX
 
 
 
