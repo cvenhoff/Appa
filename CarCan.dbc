@@ -49,10 +49,10 @@ BO_ 111 ToAccessorySystem: 8 Vector__XXX
  SG_ setFrontlights : 8|8@1+ (1,0) [0|255] "" Vector__XXX
  SG_ IgnitionButtonLed : 0|8@1+ (1,0) [0|255] "" Vector__XXX
 
-BO_ 108 FromMotorControllerR: 8 Vector__XXX
+BO_ 108 FromMotorControllerR: 2 Vector__XXX
  SG_ MotorControllerR_rpm : 0|16@1+ (1,0) [-32768|32767] "" Vector__XXX
 
-BO_ 107 FromMotorControllerL: 8 Vector__XXX
+BO_ 107 FromMotorControllerL: 2 Vector__XXX
  SG_ MotorControllerL_rpm : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
 
 BO_ 106 FromAccessorySystem: 8 Vector__XXX
