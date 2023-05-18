@@ -36,6 +36,9 @@ BS_:
 BU_:
 
 
+BO_ 255 testMessage: 8 Vector__XXX
+ SG_ testTorqueLeft : 0|32@1- (1,0) [-3.4E+038|3.4E+038] "" Vector__XXX
+
 BO_ 112 FromEmergencySystemGPS: 8 Vector__XXX
  SG_ long : 32|32@1- (1,0) [-3.4E+038|3.4E+038] "" Vector__XXX
  SG_ lat : 0|32@1- (1,0) [-3.4E+038|3.4E+038] "" Vector__XXX
@@ -245,6 +248,7 @@ BO_ 1 MainControllerHeartbeat: 8 Vector__XXX
 
 BA_DEF_  "BusType" STRING ;
 BA_DEF_DEF_  "BusType" "CAN";
+SIG_VALTYPE_ 255 testTorqueLeft : 1;
 SIG_VALTYPE_ 112 long : 1;
 SIG_VALTYPE_ 112 lat : 1;
 
