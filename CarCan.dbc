@@ -36,6 +36,40 @@ BS_:
 BU_:
 
 
+BO_ 112 FromEmergencySystemGPS: 8 Vector__XXX
+ SG_ long : 32|32@1- (1,0) [-3.4E+038|3.4E+038] "" Vector__XXX
+ SG_ lat : 0|32@1- (1,0) [-3.4E+038|3.4E+038] "" Vector__XXX
+
+BO_ 111 ToAccessorySystem: 8 Vector__XXX
+ SG_ Wiper : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Horn : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ setFrontlights : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ IgnitionButtonLed : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 108 FromMotorControllerR: 8 Vector__XXX
+ SG_ MotorControllerR_rpm : 0|16@1+ (1,0) [-32768|32767] "" Vector__XXX
+
+BO_ 107 FromMotorControllerL: 8 Vector__XXX
+ SG_ MotorControllerL_rpm : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 106 FromAccessorySystem: 8 Vector__XXX
+ SG_ BreakSensor : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ AcceleratorPedal : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ IgnitionButton : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ EmergencyButtonFront : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 0 FromHydrogenSensorNeo: 8 Vector__XXX
+ SG_ TemperatureNeo : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PressureNeo : 32|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ WaterConcentrationNeo : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ HydrogenConcentrationNeo : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 100 ToMotorcontroller: 8 Vector__XXX
+ SG_ MotorControllerR_forward : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MotorControllerR_backward : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MotorControllerL_forward : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MotorControllerL_backward : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+
 BO_ 124 toPowerdistribution: 8 Vector__XXX
  SG_ SCChargeEnable : 40|8@1+ (1,0) [0|255] "" Vector__XXX
  SG_ PowerRelayEnable : 0|8@1+ (1,0) [0|255] "" Vector__XXX
@@ -84,7 +118,7 @@ BO_ 117 toDCDC1: 8 Vector__XXX
  SG_ setCurrentMotor : 40|16@1+ (1,0) [0|65535] "" Vector__XXX
  SG_ setCurrent12V : 8|16@1+ (1,0) [0|65535] "" Vector__XXX
 
-BO_ 116 fromDCDC: 8 Vector__XXX
+BO_ 116 FromDCDC: 8 Vector__XXX
  SG_ TemperatureMotor : 24|8@1+ (1,0) [0|255] "" Vector__XXX
  SG_ TemperatureDischarge : 56|8@1+ (1,0) [0|255] "" Vector__XXX
  SG_ TemperatureCharge : 40|8@1+ (1,0) [0|255] "" Vector__XXX
@@ -114,30 +148,29 @@ BO_ 113 fromEmergencySystemGyroAcc: 8 Vector__XXX
  SG_ GyroAccX1 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 110 toSteeringWheel: 8 Vector__XXX
+ SG_ PowerDischarge : 40|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ PowerCharge : 24|16@1+ (1,0) [0|65535] "" Vector__XXX
  SG_ Velocity : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ SupercapSOC : 16|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ StrategyMode : 32|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ LapCounter : 24|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ Distance : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ SupercapSOC : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ StrategyMode : 16|8@1+ (1,0) [0|255] "" Vector__XXX
 
-BO_ 109 fromSteeringWheel: 8 Vector__XXX
- SG_ getStrategy : 16|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ getAccessoryButtons : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ getAccelerator : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+BO_ 109 FromSteeringWheel: 8 Vector__XXX
+ SG_ SteeringWheelButtons : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Accelerator : 16|8@1+ (1,0) [0|255] "" Vector__XXX
 
-BO_ 105 toSidekick: 8 Vector__XXX
- SG_ toSidekick_setBacklights : 24|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ toSidekick_FCStartStop : 8|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ toSidekick_FCEmergencyTrigger : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+BO_ 105 ToSidekick: 8 Vector__XXX
+ SG_ setBacklights : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ FCStartStop : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ FCEmergencyTrigger : 0|8@1+ (1,0) [0|255] "" Vector__XXX
 
-BO_ 103 toEmergencySystem: 8 Vector__XXX
- SG_ toES_RedLED : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ toES_GreenLED : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+BO_ 103 ToEmergencySystem: 8 Vector__XXX
+ SG_ EmergencyRedLED : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ EmergencyGreenLED : 8|8@1+ (1,0) [0|255] "" Vector__XXX
 
-BO_ 102 fromEmergencySystem: 8 Vector__XXX
- SG_ fromES_ResetButton : 16|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ fromES_H2SensorValue : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ fromES_EmergencyButtonBack : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+BO_ 102 FromEmergencySystemHydrogen: 8 Vector__XXX
+ SG_ ResetButton : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ EmergencyButtonBack : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ HydrogenConcentrationMQ2 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 15 ConfirmUpdateSetting: 8 Vector__XXX
  SG_ ConfUpdateSetting_SettingID : 0|8@1+ (1,0) [0|255] "" Vector__XXX
@@ -212,4 +245,6 @@ BO_ 1 MainControllerHeartbeat: 8 Vector__XXX
 
 BA_DEF_  "BusType" STRING ;
 BA_DEF_DEF_  "BusType" "CAN";
+SIG_VALTYPE_ 112 long : 1;
+SIG_VALTYPE_ 112 lat : 1;
 
