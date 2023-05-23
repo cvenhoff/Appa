@@ -37,7 +37,7 @@ BU_:
 
 
 BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
- SG_ MotorOverrideMux : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MotorOverrideMux : 0|8@1+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 200 ToMotorcontrollerOverride: 8 Vector__XXX
  SG_ MotorControllerRForwardOverride : 8|8@1+ (1,0) [0|255] "" Vector__XXX
@@ -73,7 +73,7 @@ BO_ 111 ToAccessorySystem: 8 Vector__XXX
  SG_ IgnitionButtonLed : 0|8@1+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 108 FromMotorControllerR: 2 Vector__XXX
- SG_ MotorControllerRRPM : 0|16@1+ (1,0) [-32768|32767] "" Vector__XXX
+ SG_ MotorControllerRRPM : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
 
 BO_ 107 FromMotorControllerL: 2 Vector__XXX
  SG_ MotorControllerLRPM : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
@@ -91,10 +91,10 @@ BO_ 0 FromHydrogenSensorNeo: 8 Vector__XXX
  SG_ HydrogenConcentrationNeo : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
 
 BO_ 100 ToMotorcontroller: 8 Vector__XXX
- SG_ MotorControllerRForward : 0|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ MotorControllerRBackward : 16|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ MotorControllerLForward : 8|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ MotorControllerLBackward : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MotorControllerRForward : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MotorControllerRBackward : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MotorControllerLForward : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MotorControllerLBackward : 24|8@1+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 124 ToPowerdistribution: 8 Vector__XXX
  SG_ PowerRelayEnable : 0|8@1+ (1,0) [0|255] "" Vector__XXX
@@ -102,7 +102,7 @@ BO_ 124 ToPowerdistribution: 8 Vector__XXX
  SG_ BleedEnable : 8|8@1+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 123 FromPowerdistributionVESC2: 8 Vector__XXX
- SG_ VESC2Power : 32|32@1+ (1,0) [-2147483648|2147483647] "" Vector__XXX
+ SG_ VESC2Power : 32|32@1+ (1,0) [0|4294967295] "" Vector__XXX
  SG_ VESC2Voltage : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
  SG_ VESC2Current : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
 
@@ -195,7 +195,7 @@ BO_ 4 AccessorySystemHeartbeat: 8 Vector__XXX
  SG_ AccessorySystemStatus : 0|8@1+ (1,0) [0|255] "" Vector__XXX
  SG_ AccessorySystemMessageCounter : 8|8@1+ (1,0) [0|255] "" Vector__XXX
  SG_ AccessorySystemMaxIntervalLast : 16|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ AccessorySystemMaxIntervalAll : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ AccessorySystemMaxIntervalAll : 24|8@1+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 3 SidekickHeartbeat: 8 Vector__XXX
  SG_ SidekickStatus : 0|8@1+ (1,0) [0|255] "" Vector__XXX
