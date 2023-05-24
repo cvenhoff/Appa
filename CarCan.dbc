@@ -155,7 +155,7 @@ BO_ 114 FromEmergencySystemGyroRot: 8 Vector__XXX
  SG_ GyroRotX : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
 
 BO_ 113 FromEmergencySystemGyroAcc: 8 Vector__XXX
- SG_ Temperature_Sig : 48|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ TemperatureSig : 48|16@1+ (1,0) [0|65535] "" Vector__XXX
  SG_ GyroAccZ : 32|16@1+ (1,0) [0|65535] "" Vector__XXX
  SG_ GyroAccY : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
  SG_ GyroAccX : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
